@@ -19,7 +19,7 @@ bool solve(vector<string> &v1, vector<string> &v2)
       ch2.push_back(v2[i][j]);
     }
   }
-
+if(ch1.size()!=ch2.size())return false;
   for (int i = 0, j = 0; i < ch1.size(), j < ch2.size(); i++, j++)
   {
     if (ch1[i] != ch2[j])
